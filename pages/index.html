@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 	<head>
 		<meta charset="utf-8">
 
@@ -11,33 +12,43 @@
 
 		<meta name="viewport" content="width=device-width; initial-scale=1.0">
 
-		<link rel="shortcut icon" href="/favicon.ico">
-		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		<link rel="shortcut icon" href="images/fav.png">
+		<link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css" />
 	</head>
 
 	<body>
 		<div>
-			<header>
-				<h1>index</h1>
-			</header>
+
 			<nav>
 				<p>
-					<a href="/">Home</a>
+					<a href="/">About</a>
 				</p>
 				<p>
-					<a href="/contact">Contact</a>
+					<a href="/contact">Sign Up or Login</a>
 				</p>
 			</nav>
-
+			<div class="jumbotron">
+				<h1>Welcome to shopping companion, your best friend in organising your shopping.</h1>
+			</div>
 			<div>
-
+				<!-- This is the main window workstape and there will be a jumbotron, and two buttons, Signup and sign in -->
+				<button class="btn btn-primary" type="submit" class="signup-btn" name="signup-btn" id="submitBtn" title="Sign Up">
+					Sign Up
+				</button>
+				<button class="btn btn-primary" type="submit" name="signin-btn" id="signin-btn" title="Sign In">
+					Sign In
+				</button>
 			</div>
 
 			<footer>
 				<p>
-					&copy; Copyright  by Samuel Munyili
+					&copy; Copyright 2017 Samuel Munyili
 				</p>
 			</footer>
 		</div>
+		<!-- Jquery and bootstrap are needed to create a responsive site -->
+		<script type="text/javascript " src="js/jquery.min.js"></script>
+		<script type="text/javascript " src="js/bootstrap.min.js" charset="utf-8 "></script>
 	</body>
+
 </html>
