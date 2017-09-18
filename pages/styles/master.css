@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+* {
+	font-family: 'Muli', sans-serif;
+	}
+body{
+	background: rgb(0, 214, 214);
+}
+.jumbotron{
+	background-color: #0AFFB5;
+	text-align: center;
+	font-size: 2em;
+}
+.buttons{
+	text-align: center;
+}
+
+.btn-primary{
+	background-color: goldenrod;
+	align-self: auto;
+}
