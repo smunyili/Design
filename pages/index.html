@@ -1,55 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+<head>
+	<meta charset="utf-8">
 
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-		<title>Shopping Companion</title>
-		<meta name="description" content="">
-		<meta name="author" content="Samuel Munyili">
+	<title>Shopping Companion</title>
+	<meta name="description" content="">
+	<meta name="author" content="Samuel Munyili">
 
-		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0">
 
-		<link rel="shortcut icon" href="images/fav.png">
-		<link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css" />
-		<link rel="stylesheet" type = "text/css" href="styles/master.css"/>
-	</head>
+	<link rel="shortcut icon" href="images/fav.png">
+	<link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="styles/master.css" />
+</head>
 
-	<body>
-		<div>
-
-			<nav class="navbar navbar-default">
-				<p>
-					<a href="/">About</a>
-				</p>
-				<p>
-					<a href="/contact">Sign Up or Login</a>
-				</p>
-			</nav>
-			<div class="jumbotron">
-				<h1>Welcome to shopping companion, your best friend in organising your shopping.</h1>
-			</div>
-			<div class = "buttons">
-				<!-- This is the main window workstape and there will be a jumbotron, and two buttons, Signup and sign in -->
-				<button class="btn btn-primary" type="submit" class="signup-btn" name="signup-btn" id="submitBtn" title="Sign Up">
+<body>
+		<div class="wrapper container">
+                <nav class="navbar navbar-default">
+                    <div class="navbar-right">
+                        <ul class="menu-item">
+                            <li><a href="/login">Login</a></li>
+							<li><a href="/sign-up">Sign Up</a></li>
+							<li><a href="/about">About</a></li>
+                        </ul>
+                    </div>
+                </nav>
+		<div class="jumbotron">
+			<h1>Welcome to shopping companion, your best friend in organising your shopping.</h1>
+		</div>
+		<div class="buttons">
+			<!-- This is the main window workstape and there will be a jumbotron, and two buttons, Signup and sign in -->
+			<button class="btn btn-primary" type="submit" class="signup-btn" name="signup-btn" id="submitBtn" title="Sign Up">
 					Sign Up
 				</button>
-				<button class="btn btn-primary" type="submit" name="signin-btn" id="signin-btn" title="Sign In">
+			<button class="btn btn-primary" type="submit" name="signin-btn" id="signin-btn" title="Sign In">
 					Sign In
 				</button>
-			</div>
-
-			<footer>
-				<p>
-					&copy; Copyright 2017 Samuel Munyili
-				</p>
-			</footer>
 		</div>
-		<!-- Jquery and bootstrap are needed to create a responsive site -->
-		<script type="text/javascript " src="js/jquery.min.js"></script>
-		<script type="text/javascript " src="js/bootstrap.min.js" charset="utf-8 "></script>
-	</body>
+
+		<footer>
+				&copy; Copyright 2017 Samuel Munyili
+		</footer>
+	</div>
+	<!-- Jquery and bootstrap are needed to create a responsive site -->
+	<script type="text/javascript " src="js/jquery.min.js"></script>
+	<script type="text/javascript " src="js/bootstrap.min.js" charset="utf-8 "></script>
+</body>
 
 </html>
