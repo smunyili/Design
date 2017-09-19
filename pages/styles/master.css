@@ -11,11 +11,112 @@ body{
 	text-align: center;
 	font-size: 2em;
 }
+
+.menu-item{
+	padding-right: 3rem;
+	padding-top: 1rem;
+}
+.menu-item li{
+	display: inline;
+	padding-right: 2rem;
+	
+}
+.panel-footer{
+	background: inherit;
+	text-align: center;
+	border-bottom-color: inherit;
+}
 .buttons{
 	text-align: center;
 }
 
 .btn-primary{
-	background-color: goldenrod;
+	background-color: rgb(17, 211, 98);
 	align-self: auto;
 }
+
+div .row{
+	float: auto;
+	text-align: center;
+	padding: 2rem;
+
+}
+.dashboard button{
+	margin-top: 5rem;
+	height: 10rem;
+	width: 20rem;
+}
+
+.asterisk{
+	color: red;
+	font-weight: bold;
+	font-family: 'Times New Roman', Times, serif
+}
+
+.login-btn, .signup-btn, .reset-btn, .btn-add-item{
+	padding: 2rem;
+	/* max-height: rem; */
+	width: 15rem;
+	background: #33DF08;
+	margin-top: 3rem;
+}
+
+.label-primary{
+	margin: 3rem;
+	background-color: inherit;
+	color: blue;
+	font-size: 1.2em;
+	padding: 2rem;
+	font-weight: lighter;
+	margin-top: 2rem;
+	padding-top: 5rem;
+	/* margin-left: auto; */
+}
+
+.login{
+	text-align: center;
+}
+
+.form-control{
+	max-width: 40rem;
+	/* float: auto; */
+	height: 2.5em;
+	display: block;
+	margin : 0 auto;
+}
+
+
+  table, th, td {
+    border: 1px solid rgb(141, 137, 137);
+    border-collapse: collapse;
+}
+th, td {
+    padding: 1rem;
+}
+th {
+    text-align: center;
+}
+td{
+	text-align: left;
+}
+.price-col, .qty-col{
+	text-align: right;
+}
+.img-col{
+	text-align: center;
+}
+.img-col img{
+	max-width: 1.8rem;
+	max-height: 1.8rem;
+}
+table {
+	margin: auto;
+	border-spacing: 5px;
+	float: auto;
+	min-width: 75%;
+}
+
+.items-table{
+	text-align: center;
+}
+
