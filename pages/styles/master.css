@@ -21,6 +21,11 @@ body{
 	padding-right: 2rem;
 	
 }
+.panel-footer{
+	background: inherit;
+	text-align: center;
+	border-bottom-color: inherit;
+}
 .buttons{
 	text-align: center;
 }
@@ -48,7 +53,7 @@ div .row{
 	font-family: 'Times New Roman', Times, serif
 }
 
-.login-btn, .signup-btn, .reset-btn{
+.login-btn, .signup-btn, .reset-btn, .btn-add-item{
 	padding: 2rem;
 	/* max-height: rem; */
 	width: 15rem;
@@ -80,4 +85,38 @@ div .row{
 	margin : 0 auto;
 }
 
+
+  table, th, td {
+    border: 1px solid rgb(141, 137, 137);
+    border-collapse: collapse;
+}
+th, td {
+    padding: 1rem;
+}
+th {
+    text-align: center;
+}
+td{
+	text-align: left;
+}
+.price-col, .qty-col{
+	text-align: right;
+}
+.img-col{
+	text-align: center;
+}
+.img-col img{
+	max-width: 1.8rem;
+	max-height: 1.8rem;
+}
+table {
+	margin: auto;
+	border-spacing: 5px;
+	float: auto;
+	min-width: 75%;
+}
+
+.items-table{
+	text-align: center;
+}
 

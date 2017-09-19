@@ -16,36 +16,34 @@
 </head>
 
 <body class="log-in">
-        <div class="wrapper container">
-                <nav class="navbar navbar-default">
-                    <div class="navbar-right">
-                        <ul class="menu-item">
-                            <li><a href="../">Home</a></li>
-                            <li><a href="../login">Login</a></li>
-                            <li><a href="../sign-up">Sign Up</a></li>
-                        </ul>
-                    </div>
-                </nav>
-    <div class="container">
-        <div class="row login">
-            <label for="user-name"class="label label-primary">User name or Email<span class="asterisk">*</span></label>
-            <input class="form-control text-input-username" id="user-name" type="text" name="user-name" 
-            value="" required="color:mediumblue" id="name" value="" placeholder="Enter user name or email address"
-             onfocus="this.setSelectionRange(0, this.value.length)">
-             <br>
+    <div class="wrapper container">
+        <nav class="navbar navbar-default">
+            <div class="navbar-right">
+                <ul class="menu-item">
+                    <li><a href="../">Home</a></li>
+                    <li><a href="../about">About</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row login">
+                <label for="user-name" class="label label-primary">User name or Email<span class="asterisk">*</span></label>
+                <input class="form-control text-input-username" id="user-name" type="text" name="user-name" value="" required="color:mediumblue"
+                    id="name" value="" placeholder="Enter user name or email address" onfocus="this.setSelectionRange(0, this.value.length)">
+                <br>
 
-             <label for="password"class="label label-primary">Password<span class="asterisk">*</span></label>
-             <input class="form-control text-input-password" id="password" type="password" name="password" 
-             value="" required="color:mediumblue" id="name" value="" placeholder="Enter passwrod"
-              onfocus="this.setSelectionRange(0, this.value.length)">
+                <label for="password" class="label label-primary">Password<span class="asterisk">*</span></label>
+                <input class="form-control text-input-password" id="password" type="password" name="password" value="" required="color:mediumblue"
+                    id="name" value="" placeholder="Enter passwrod" onfocus="this.setSelectionRange(0, this.value.length)">
 
-              <button class="btn btn-primary login-btn" type="submit"
-              name="login-btn" id="login-btn" title="Login">Login</button>
+                <form action=../dashboard>
+                    <button class="btn btn-primary login-btn" type="submit" name="login-btn" id="login-btn" title="Login">Login</button>
+                </form>
 
-              <p><a href="../">Forgot password</a></p>
- 
+                <p><a href="../reset-password">Forgot password</a></p>
+
+            </div>
         </div>
-    </div>
     </div>
     <footer>
         &copy; Copyright 2017 Samuel Munyili

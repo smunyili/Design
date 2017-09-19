@@ -11,34 +11,96 @@
     <title>Shopping List [User Name]</title>
 
     <link rel="shortcut icon" href="../images/fav.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"
+    />
     <link rel="stylesheet" type="text/css" href="../styles/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="../styles/master.css" />
 </head>
 
 <body class="log-in">
-        <div class="wrapper container">
-                <nav class="navbar navbar-default">
-                    <div class="navbar-right">
-                        <ul class="menu-item">
-                            <li><a href="../">Home</a></li>
-                            <li><a href="../login">Sign out</a></li>
-                        </ul>
-                    </div>
-                </nav>
-    <div class="container">
-        <div class="row shopping-list">
-            
- 
+    <div class="wrapper container">
+        <nav class="navbar navbar-default">
+            <div class="navbar-right">
+                <ul class="menu-item">
+                    <li><a href="../">Home</a></li>
+                    <li><a href="../login">Sign out</a></li>
+                    <li><a href="../about">About</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row shopping-list">
+                <P>
+                    <label for="list-name" class="label label-primary">Shopping List Name<span class="asterisk">*</span></label>
+                    <input class="form-control list-name" id="list-name" type="text" name="list-name" value="" required="color:mediumblue" id="list-name"
+                        value="" placeholder="Shopping List Name" onfocus="this.setSelectionRange(0, this.value.length)">
+
+                    <label for="fulfil-date" class="label label-primary">Required Date</label><br/>
+                    <input class="form-control text-input-demo" id="fulfil-date" type="date" name="fulfil-date" value="" id="fulfil-date" placeholder="MM/DD/YYY"
+                        onfocus="this.setSelectionRange(0, this.value.length)">
+                </P>
+                <form action="add-item">
+                <label for="product-name" class="label label-primary">Product Name<span class="asterisk">*</span></label>
+                <input class="form-control" type="text" name="product-name" list="productName" />
+                <!-- This will be updated from the database with the list of items so the current list is for demo purpose only -->
+                <datalist id="productName">
+                    <option value="Drinking Water">Drinking Water</option>
+                    <option value="Pan Coffee">Pan Coffee</option>
+                    <option value="Curry Powder">Curry Powder</option>
+                </datalist>
+
+                <label for="supplier-name" class="label label-primary">Preferred Supplier</label>
+                <input class="form-control" type="text" name="supplier-name" list="SupplierName" />
+
+                <!-- This will be updated from the database with the list of items so the current list is for demo purpose only -->
+                <datalist id="SupplierName">
+                    <option value="Drinking Water">Drinking Water</option>
+                    <option value="Pan Coffee">Pan Coffee</option>
+                    <option value="Curry Powder">Curry Powder</option>
+                </datalist>
+
+                <label for="quantity" class="label label-primary">Quantity</label>
+                <input class="form-control quantity" id="quantity" type="number" name="quantity" 
+                required="color:mediumblue" placeholder="0.0" onfocus="this.setSelectionRange(0, this.value.length)">
+                 
+
+                <label for="price" class="label label-primary">Buying Price</label>
+                <input class="form-control price" id="price" type="text" name="price" 
+                required="color:mediumblue" placeholder="KES 0,00.00" onfocus="this.setSelectionRange(0, this.value.length)">
+                    <button class="btn btn-primary btn-add-item" type="submit" value="Add To List">Add Item To List</button>
+            </form>
+                <!-- All items will be added to this table once the submit button is pressed. -->
+                <div class="items-table">
+                <table>
+                    <caption>Shopping List Items</caption>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Preferred Supplier</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Purchase Status</th>
+                    </tr>
+                    <tr>
+                        <td>Curry Powder</td>
+                        <td>Nakumatt Stores</td>
+                        <td class="qty-col">1</td>
+                        <td class="price-col">KES 200</td>
+                        <td class="img-col"><img src="../images/fail.png" alt="Smiley face" height="42" width="42"></td>
+                    </tr>
+                </table>
+            </div>
+
+            </div>
         </div>
     </div>
-    </div>
-    <footer>
+    <footer class="panel-footer">
         &copy; Copyright 2017 Samuel Munyili
     </footer>
     </div>
     <!-- Jquery and bootstrap are needed to create a responsive site -->
     <script type="text/javascript " src="../js/jquery.min.js"></script>
     <script type="text/javascript " src="../js/bootstrap.min.js" charset="utf-8 "></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
 </body>
 
 </html>
