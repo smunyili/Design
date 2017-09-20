@@ -4,12 +4,26 @@
 	font-family: 'Muli', sans-serif;
 	}
 body{
-	background: rgb(0, 214, 214);
+	/* background: rgb(0, 214, 214); */
+	background: #001f3f;
 }
 .jumbotron{
-	background-color: #0AFFB5;
+	/* background-color: #0AFFB5; */
+	backface-visibility: 0%;
 	text-align: center;
 	font-size: 2em;
+	background: rgb(200, 54, 54); 
+	background: rgba(112, 42, 42, 0.2); 
+}
+
+.home-page{
+	background-image: url("../images/bgpic.jpg");
+	background-size: 100% 100%;
+	height: 100%;
+	flex: 1 1 auto;
+	padding: 2rem;
+	background-repeat: no-repeat;
+	margin-top: -2rem;
 }
 
 .menu-item{
@@ -25,6 +39,7 @@ body{
 	background: inherit;
 	text-align: center;
 	border-bottom-color: inherit;
+	color: white;
 }
 .buttons{
 	text-align: center;
@@ -57,7 +72,8 @@ div .row{
 	padding: 2rem;
 	/* max-height: rem; */
 	width: 15rem;
-	background: #33DF08;
+	/* background: #33DF08; */
+	background: #3D9970;
 	margin-top: 3rem;
 }
 
@@ -120,3 +136,8 @@ table {
 	text-align: center;
 }
 
+.about-home{
+	color: #FFFF;
+	text-align: center;
+	font-size: 1.3em;
+}
