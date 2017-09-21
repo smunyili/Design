@@ -15,8 +15,8 @@
   <link rel="stylesheet" type="text/css" href="../../static/css/master.css" />
 </head>
 
-<body class="dashboard">
-  <div class="wrapper container">
+<body class="dashboard"  style="background-image: url('../../static/images/bgpic.jpg')">
+  <div class="wrapper container" >
     <nav class="navbar navbar-default">
       <div class="navbar-right">
         <ul class="menu-item">
@@ -29,19 +29,26 @@
     </nav>
     <div class="container">
       <div class="row">
-        <div class="col-md-12  col-lg-12">
+        <div class="col-md-6  col-lg-6">
           <button class="btn btn-primary">My Profile</button>
         </div>
-        <div class="col-md-12  col-lg-12">
+        <div class="col-md-6  col-lg-6">
             <form action="../shopping-list">
-          <button class="btn btn-primary" type="submit">My Shopping Lists</a></button>
+          <button class="btn btn-primary" type="submit">Add Shopping List</a></button>
         </form>
-        </div>
-        <div class="col-md-12  col-lg-12">
+       </div>
+      <div class="row">
+        <div class="col-md-6  col-lg-6">
           <form action="">
-                <button class="btn btn-primary" type="submit">Favourites</button>
+                <button class="btn btn-primary" type="submit">Received Lists</button>
           </form>
         </div>
+        <div class="col-md-6  col-lg-6">
+          <form action="">
+                <button class="btn btn-primary" type="submit">Shared Lists</button>
+          </form>
+        </div>
+      </div>
       </div>
 
     </div>
