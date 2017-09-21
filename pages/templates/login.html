@@ -10,9 +10,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login: My Shopping Companion</title>
 
-    <link rel="shortcut icon" href="../images/fav.png">
-    <link rel="stylesheet" type="text/css" href="../styles/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../styles/master.css" />
+    <link rel="shortcut icon" href="../static/images/fav.png">
+    <link rel="stylesheet" type="text/css" href="../static/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../static/css/master.css" />
 </head>
 
 <body class="log-in">
@@ -27,6 +27,7 @@
         </nav>
         <div class="container">
             <div class="row login">
+                    <form method="POST" action="/send">
                 <label for="user-name" class="label label-primary">User name or Email<span class="asterisk">*</span></label>
                 <input class="form-control text-input-username" id="user-name" type="text" name="user-name" value="" required="color:mediumblue"
                     id="name" value="" placeholder="Enter user name or email address" onfocus="this.setSelectionRange(0, this.value.length)">
@@ -36,7 +37,7 @@
                 <input class="form-control text-input-password" id="password" type="password" name="password" value="" required="color:mediumblue"
                     id="name" value="" placeholder="Enter passwrod" onfocus="this.setSelectionRange(0, this.value.length)">
 
-                <form action=../dashboard>
+                
                     <button class="btn btn-primary login-btn" type="submit" name="login-btn" id="login-btn" title="Login">Login</button>
                 </form>
 
@@ -45,13 +46,13 @@
             </div>
         </div>
     </div>
-    <footer>
+    <footer class="panel-footer">
         &copy; Copyright 2017 Samuel Munyili
     </footer>
     </div>
     <!-- Jquery and bootstrap are needed to create a responsive site -->
-    <script type="text/javascript " src="../js/jquery.min.js"></script>
-    <script type="text/javascript " src="../js/bootstrap.min.js" charset="utf-8 "></script>
+    <script type="text/javascript " src="../static/js/jquery.min.js"></script>
+    <script type="text/javascript " src="../static/js/bootstrap.min.js" charset="utf-8 "></script>
 </body>
 
 </html>

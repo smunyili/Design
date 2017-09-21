@@ -4,12 +4,42 @@
 	font-family: 'Muli', sans-serif;
 	}
 body{
-	background: rgb(0, 214, 214);
+	/* background: rgb(0, 214, 214); */
+	/* background: rgba(0, 31, 63, 0.2); */
+	background-color: #454140;
 }
 .jumbotron{
-	background-color: #0AFFB5;
+	/* background-color: #0AFFB5; */
+	backface-visibility: 0%;
 	text-align: center;
 	font-size: 2em;
+	background: rgb(200, 54, 54); 
+	background: rgba(112, 42, 42, 0.5); 
+}
+
+.jumbotron{
+	color: #FFFF;
+	text-shadow: 0.02em 0.02em aquamarine;
+}
+.jumbotron h1{
+	font-size: 2.4em;
+	/* color: white; */
+}
+
+.jumbotron p{
+	font-size: 1.3em;
+	text-shadow: none;
+	color: white;
+}
+
+.home-page{
+	background-image: url("../images/bgpic.jpg");
+	background-size: 100% 100%;
+	height: 100%;
+	flex: 1 1 auto;
+	padding: 2rem;
+	background-repeat: no-repeat;
+	margin-top: -2rem;
 }
 
 .menu-item{
@@ -25,9 +55,12 @@ body{
 	background: inherit;
 	text-align: center;
 	border-bottom-color: inherit;
+	color: white;
 }
 .buttons{
 	text-align: center;
+	font-weight: 400;
+	font-size: 1.2em;
 }
 
 .btn-primary{
@@ -57,14 +90,15 @@ div .row{
 	padding: 2rem;
 	/* max-height: rem; */
 	width: 15rem;
-	background: #33DF08;
+	/* background: #33DF08; */
+	background: #3D9970;
 	margin-top: 3rem;
 }
 
 .label-primary{
 	margin: 3rem;
 	background-color: inherit;
-	color: blue;
+	color: #ffff;
 	font-size: 1.2em;
 	padding: 2rem;
 	font-weight: lighter;
@@ -88,7 +122,8 @@ div .row{
 
   table, th, td {
     border: 1px solid rgb(141, 137, 137);
-    border-collapse: collapse;
+	border-collapse: collapse;
+	color: aqua;
 }
 th, td {
     padding: 1rem;
@@ -119,4 +154,21 @@ table {
 .items-table{
 	text-align: center;
 }
+.shopping-list input{
+	margin-bottom: 1rem;
+	margin-bottom: 1.3rem;
+}
+.shopping-list-main{
+	background-color: #003CFF;
+}
 
+.about-home{
+	color: #FFFF;
+	text-align: center;
+	font-size: 1.3em;
+}
+
+.intro-about{
+	color: #001f3f;
+	margin-bottom: 3rem;
+}
