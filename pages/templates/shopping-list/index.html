@@ -8,7 +8,7 @@
     <meta name="author" content="Samuel Munyili">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Shopping List [User Name]</title>
+    <title>Shopping List {{ name }}</title>
 
     <link rel="shortcut icon" href="../../static/images/fav.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"
@@ -17,7 +17,7 @@
     <link rel="stylesheet" type="text/css" href="../../static/css/master.css" />
 </head>
 
-<body class="log-in">
+<body class="shopping-list">
     <div class="wrapper container">
         <nav class="navbar navbar-default">
             <div class="navbar-right">
@@ -30,6 +30,7 @@
         </nav>
         <div class="container">
             <div class="row shopping-list">
+              
                 <P>
                     <label for="list-name" class="label label-primary">Shopping List Name<span class="asterisk">*</span></label>
                     <input class="form-control list-name" id="list-name" type="text" name="list-name" value="" required="color:mediumblue" id="list-name"
@@ -85,7 +86,7 @@
                         <td>Nakumatt Stores</td>
                         <td class="qty-col">1</td>
                         <td class="price-col">KES 200</td>
-                        <td class="img-col"><img src="../images/fail.png" alt="Smiley face" height="42" width="42"></td>
+                        <td class="img-col"><img src="../../static/images/Tick.png" alt="Smiley face" height="42" width="42"></td>
                     </tr>
                 </table>
             </div>

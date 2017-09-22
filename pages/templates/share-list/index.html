@@ -8,7 +8,7 @@
     <meta name="author" content="Samuel Munyili">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Login: My Shopping Companion</title>
+    <title>Share Shopping List</title>
 
     <link rel="shortcut icon" href="../../static/images/fav.png">
     <link rel="stylesheet" type="text/css" href="../../static/css/bootstrap.min.css" />
@@ -21,23 +21,33 @@
             <div class="navbar-right">
                 <ul class="menu-item">
                     <li><a href="/">Home</a></li>
+                    <li><a href="/login">Sign Out</a></li>
                     <li><a href="/about">About</a></li>
                 </ul>
             </div>
         </nav>
         <div class="container">
             <div class="row login">
-                <form method="post" action="/dashboard">
-                    <span class="error-message">{{ errormessage }}</span>
+                <p class="intro-about">
+                    With shopping Companion, you can easily share your shoppling lists to your friends.
                     <br>
+                    Please enter email address of the person you want to share the with and begin sharing lists.
+                </p>
+                <form method="POST" action="/login">
                     <label for="user-name" class="label label-primary">User name or Email<span class="asterisk">*</span></label>
                     <input class="form-control text-input-username" id="user-name" type="text" name="user-name" value="" required="color:mediumblue"
                         id="name" value="" placeholder="Enter user name or email address" onfocus="this.setSelectionRange(0, this.value.length)">
                     <br>
 
-                    <label for="password" class="label label-primary">Password<span class="asterisk">*</span></label>
-                    <input class="form-control text-input-password" id="password" type="password" name="password" value="" 
-                    required="color:mediumblue" placeholder="Enter passwrod" onfocus="this.setSelectionRange(0, this.value.length)">
+                    <label for="share-list" class="label label-primary">Select List you Want to Share(You can select multiple lists)</label>
+                    <br>
+                    <select multiple name="share-list" id="share-list">
+                        <option value="Shopping List 1">Shopping List 1</option>
+                        <option value="Shopping List 2">Shopping List 2</option>
+                        <option value="Shopping List 3">Shopping List 3</option>
+                        <option value="Shopping List 4">Shopping List 4</option>
+                    </select>
+                    <br>
 
                     <button class="btn btn-primary login-btn" type="submit" name="login-btn" id="login-btn" title="Login">Login</button>
                 </form>

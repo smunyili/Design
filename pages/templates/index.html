@@ -22,9 +22,9 @@
                 <nav class="navbar navbar-default">
                     <div class="navbar-right">
                         <ul class="menu-item">
-                            <li><a href="login">Login</a></li>
+                            <li><a href="/login">Login</a></li>
 							<li><a href="sign-up">Sign Up</a></li>
-							<li><a href="about">About</a></li>
+							<li><a href="/about">About</a></li>
                         </ul>
                     </div>
 				</nav>
@@ -39,9 +39,12 @@
 					Sign Up
 				</button>
 				<br>
-			<button class="btn btn-primary login-btn" type="submit" name="login-btn" id="login-btn" title="Sign In">
+
+			<form action="/login" method="POST">
+				<button class="btn btn-primary login-btn" type="submit" name="login-btn" id="login-btn" title="Sign In">
 					Sign In
 				</button>
+			</form>
 		</div>
 	</div>
 		<footer class="panel-footer">
