@@ -8,7 +8,7 @@
     <meta name="author" content="Samuel Munyili">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Shopping List [User Name]</title>
+    <title>Shopping List {{ name }}</title>
 
     <link rel="shortcut icon" href="../../static/images/fav.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"
@@ -30,6 +30,7 @@
         </nav>
         <div class="container">
             <div class="row shopping-list">
+              
                 <P>
                     <label for="list-name" class="label label-primary">Shopping List Name<span class="asterisk">*</span></label>
                     <input class="form-control list-name" id="list-name" type="text" name="list-name" value="" required="color:mediumblue" id="list-name"

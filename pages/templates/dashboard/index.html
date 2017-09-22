@@ -8,14 +8,15 @@
   <meta name="author" content="Samuel Munyili">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>My Dashboard: [User Name]</title>
+  <title>My Dashboard: {{name}}</title>
 
   <link rel="shortcut icon" href="../../static/images/fav.png">
   <link rel="stylesheet" type="text/css" href="../../static/css/bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" href="../../static/css/master.css" />
 </head>
 
-<body class="dashboard"  style="background-image: url('../../static/images/bgpic.jpg')">
+<body class="dashboard"  >
+    <!-- style="background-image: url('../../static/images/bgpic.jpg')" -->
   <div class="wrapper container" >
     <nav class="navbar navbar-default">
       <div class="navbar-right">
@@ -28,12 +29,13 @@
       </div>
     </nav>
     <div class="container">
+        <p class="welcome" style="color: aquamarine; font-size: 1.3em; font-weight: bold; text-align: center;">Welcome back {{name}}</p>
       <div class="row">
         <div class="col-md-6  col-lg-6">
           <button class="btn btn-primary">My Profile</button>
         </div>
         <div class="col-md-6  col-lg-6">
-            <form action="../shopping-list">
+            <form action="/shoppingList">
           <button class="btn btn-primary" type="submit">Add Shopping List</a></button>
         </form>
        </div>
